@@ -1,0 +1,50 @@
+PLINK v2.00a3.6LM 64-bit Intel (14 Aug 2022)
+Options in effect:
+  --allow-extra-chr
+  --autosome
+  --exclude bed0 high-LD-regions-hg38-GRCh38.txt
+  --fa /data/iwakih2/resources/hg38.fa.gz
+  --geno 0.05
+  --hwe 0.000001
+  --maf 0.01
+  --make-pgen
+  --max-alleles 2
+  --mind 0.01
+  --out all_hg38_filtered
+  --pfile all_hg38 vzs
+  --ref-from-fa force
+  --remove deg2_hg38.king.cutoff.out.id
+  --snps-only just-acgt
+  --sort-vars
+
+Hostname: cn4318
+Working directory: /gpfs/gsfs9/users/iwakih2/resources/1kg_p3
+Start time: Mon Nov  6 18:07:24 2023
+
+Random number seed: 1699312044
+515436 MiB RAM detected; reserving 257718 MiB for main workspace.
+Using up to 128 threads (change this with --threads).
+3202 samples (1603 females, 1599 males; 2583 founders) loaded from
+all_hg38.psam.
+61599150 out of 75193455 variants loaded from all_hg38.pvar.zst.
+2 categorical phenotypes loaded.
+--exclude bed0: 2079938 variants excluded.
+--remove: 2573 samples remaining.
+Calculating sample missingness rates... done.
+0 samples removed due to missing genotype data (--mind).
+2573 samples (1296 females, 1277 males; 2561 founders) remaining after main
+filters.
+Calculating allele frequencies... done.
+--geno: 0 variants removed due to missing genotype data.
+--hwe: 2683913 variants removed due to Hardy-Weinberg exact test (founders
+only).
+47340903 variants removed due to allele frequency threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+9494396 variants remaining after main filters.
+--ref-from-fa force: 0 variants changed, 9494396 validated.
+--fa: Lengths scraped for 22 contigs.
+Writing all_hg38_filtered.pvar ... done.
+Writing all_hg38_filtered.psam ... done.
+Writing all_hg38_filtered.pgen ... done.
+
+End time: Mon Nov  6 18:11:09 2023
